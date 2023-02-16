@@ -1,6 +1,6 @@
-.texto-grande {
-    font-size: 64px;
-    line-height: 72px;
+/* .font-1-xxl {
+    font-size: 4rem;
+    line-height: 1.125;
     font-family: 'Poppins';
     font-weight: 600;
 }
@@ -10,4 +10,36 @@
     line-height: 1.5;
     font-family: 'Roboto';
     font-weight: 400;
+} */
+
+
+:root {
+    --font-1-xxl: 600 4rem/1.125 'Poppins';
+    
+    --font-2-l: 600 1.5rem/1.5 'Roboto';
+
+    --font-1-m: 500 1.125rem/1.35 'Poppins';
+    --font-1-m: 500 1.125rem/1.35 'Roboto';
+
+    --font-1-xs: 400 0.75rem/1.35 'Poppins';
+    --font-2-xs: 400 0.875rem/1.43 'Roboto';
+
+    --font-1-s: 400 1rem/1.5 'Poppins';
+    --font-2-s: 400 1rem/1.5 'Roboto';
+
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --font-1-xxl: 600 3rem/1.125 'Poppins';
+        --font-2-l: 600 1.125rem/1.125 'Roboto';
+
+    }
+}
+
+
+@media (max-width: 800px) {
+    :root {
+        --font-1-xxl: 600 2rem/1.125 'Poppins';
+    }
 }

@@ -22,10 +22,8 @@
 .header-menu a {
     display: inline-block;
     padding: 16px 0;
-    font-size: 18px;
     position: relative;
-    font-family: 'Poppins';
-    font-weight: 400;
+    font: var(--font-1-m);
     color: var(--cor-0);
 }
 
@@ -67,10 +65,6 @@
 @media (max-width: 600px) {
     .header-menu {
         gap: 12px;
-    }
-
-    .header-menu a{
-        font-size: 12px;
     }
 }
 

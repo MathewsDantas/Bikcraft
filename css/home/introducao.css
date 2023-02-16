@@ -30,6 +30,7 @@
 .introducao h1 {
     margin-bottom: 32px;
     color: var(--cor-0);
+    font: var(--font-1-xxl);
 }
 
 .introducao h1 span {
@@ -39,16 +40,7 @@
 .introducao p {
     margin-bottom: 20px;
     color: var(--cor-5);
-}
-
-@media (max-width: 1200px) {
-    .introducao h1 {
-        font-size: 48px;
-        line-height: 48px;
-    }
-    .introducao p {
-        font-size: 18px;
-    }
+    font: var(--font-2-l);
 }
 
 @media (max-width: 800px) {
@@ -63,9 +55,6 @@
     .introducao h1 {
         font-size: 32px;
         margin-bottom: 16px;
-    }
-    .introducao p {
-        font-size: 14px;
     }
     .introducao img {
         width: 100%;
