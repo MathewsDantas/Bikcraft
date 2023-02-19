@@ -1,0 +1,57 @@
+.titulo-bg {
+    background: var(--cor-11);
+}
+
+.titulo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.titulo p {
+    text-transform: uppercase;
+    color: var(--cor-5);
+    font: var(--font-2-l);
+}
+
+.titulo h1 {
+    color: var(--cor-0);
+    font: var(--font-1-xxl);
+}
+
+.titulo h1 span {
+    color: var(--cor-p1);
+}
+
+.termos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.termos h2 {
+    margin-bottom: 20px;
+    color: var(--cor-11);
+    font: var(--font-1-l);
+}
+
+.termos p + h2 { /*Todo h2 que vem dps de um p*/
+    margin-top: 40px;
+}
+
+.termos p {
+    max-width: 80ch;
+    margin-bottom: 24px;
+    color: var(--cor-10);
+    font: var(--font-2-s);
+}
+
+@media (max-width: 800px) {
+    .titulo-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .titulo p {
+        text-transform: lowercase;
+    }
+}
