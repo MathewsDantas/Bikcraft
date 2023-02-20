@@ -1,5 +1,7 @@
+
 .bicicletas-bg:nth-child(3) {
-    background: var(--cor-11);
+    background-image: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 30%);
+    /*as duas cores começam em 30%*/
 }
 
 .bicicletas {
@@ -70,9 +72,36 @@
 }
 
 .bicicletas-conteudo a {
-    place-self: end; /*center ou start*/
+    place-self: end;
+    /*center ou start*/
 }
 
 #titulo-2 {
     color: var(--cor-0);
+}
+
+@media (max-width: 800px) {
+    .bicicletas-bg:nth-child(3){
+        background: var(--cor-11);
+    }
+    .bicicletas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bicicletas-conteudo {
+        grid-template-columns: 1fr;
+    }
+    .bicicletas ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bicicletas a {
+        place-self: start;
+        margin-top: 20px;
+    }
 }

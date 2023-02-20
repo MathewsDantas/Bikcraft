@@ -1,0 +1,43 @@
+
+.vantagens-bg {
+    background-color: var(--cor-12);
+}
+
+.vantagens {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.vantagens h2 {
+    margin-bottom: 60px;
+    color: var(--cor-0);
+    font: var(--font-1-xxl);
+}
+
+.vantagens ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, max-content));/*O grid fica "auto reponsivo" os items do container só poderão ter no mínimo 240px, caso n consigam, será diminuído uma coluna do grid.*/
+    gap: 40px 60px;
+}
+
+.vantagens h3 {
+    margin-bottom: 8px;
+    color: var(--cor-0);
+    font: var(--font-1-l);
+}
+
+.vantagens p {
+    color: var(--cor-5);
+    font: var(--font-2-s);
+}
+
+@media (max-width: 800px) {
+    .vantagens {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .vantagens h2 {
+        margin-bottom: 40px;
+    }
+}
