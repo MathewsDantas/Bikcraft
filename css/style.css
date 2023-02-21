@@ -20,6 +20,7 @@
 @import 'termos/titulo.css';
 
 
-@import 'bicicletas/bicicleta.css';
+@import 'bicicletas/bicicletas.css';
 @import 'seguros/vantagens.css';
 @import 'seguros/perguntas.css';
+@import 'bicicletas/bicicleta.css';
