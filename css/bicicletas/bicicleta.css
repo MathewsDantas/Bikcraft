@@ -110,6 +110,7 @@
         grid-template-columns: 1fr;
         padding: 30px 20px;
     }
+
     .bicicleta-imagens {
         grid-row: 2;
     }
@@ -119,6 +120,7 @@
     .bicicleta-informacoes {
         grid-template-columns: 1fr;
     }
+
     .bicicleta-comprar {
         grid-template-columns: 1fr;
     }

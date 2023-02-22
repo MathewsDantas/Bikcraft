@@ -1,0 +1,49 @@
+.seguro-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
+}
+
+.seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.seguro-imagem {
+
+}
+
+.seguro-imagem img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.seguro-conteudo {
+    padding: 120px 0;
+}
+
+.seguro-conteudo h2 {
+    margin-bottom: 32px;
+    color: var(--cor-0);
+    font: var(--font-1-xxl);
+}
+
+.seguro-conteudo p {
+    margin-bottom: 20px;
+    color: var(--cor-5);
+    font: var(--font-2-l);
+}
+
+@media (max-width: 800px) {
+    .seguro {
+        grid-template-columns: 1fr;
+    }
+    .seguro-conteudo {
+        grid-row: 1;
+    }
+}
