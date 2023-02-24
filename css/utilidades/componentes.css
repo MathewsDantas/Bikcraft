@@ -9,6 +9,8 @@
     color: #332200;
     font: var(--font-1-m);
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 .botao:hover {
