@@ -125,6 +125,36 @@
     font: var(--font-1-xs);
 }
 
+.orcamento-detalhes {
+    display: none;
+}
+
+.orcamento-produto input:checked+label+ .orcamento-detalhes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--cor-0);
+    padding: 20px;
+}
+
+.orcamento-detalhes ul {
+    color: var(--cor-8);
+    font: var(--font-1-xs);
+}
+
+.orcamento-detalhes li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.orcamento-detalhes li img {
+    width: 16px;
+}
+
 .orcamento-dados {
     border-radius: 5px 0 0 5px;
     background: var(--cor-0);
@@ -144,4 +174,29 @@
     /* O tio (~) procura o primeiro elemento com '#orcamento-bikcraft' e aplica o código*/
     display: grid;
     gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .orcamento-produto,
+    .orcamento-dados {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 800px) {
+    .orcamento {
+        grid-template-columns: 1fr;
+    }
+    .orcamento-produto{
+        border-radius: 5px 5px 0 0;
+    }
+    .orcamento-dados {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .orcamento-produto {
+        grid-template-columns: 1fr;
+    }
 }
